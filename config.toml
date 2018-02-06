@@ -1,0 +1,25 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Site Shakeup"
+theme = "kube"
+Paginate = 4
+[Params]
+  description = "Accounting websites that get cleints."
+  RSSLink = "/index.xml"
+  author = "Site Shakeup" # add your company name
+  github = "" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = "contact@siteshakeup.com"
+
+[[menu.main]]
+    name = "About"
+    weight = -100
+    url = "/about/"
+[[menu.main]]
+    name = "Contact"
+    weight = -100
+    url = "/contact-us/"
+[[menu.main]]
+    name = "Faq"
+    weight = -100
+    url = "/faq/"
