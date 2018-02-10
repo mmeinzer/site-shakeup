@@ -17,7 +17,7 @@ url = "/about/"
 weight = -100
 [params]
 author = "Site Shakeup"
-description = "Accounting websites that get clients."
+description = "Improving your web presence in two shakes"
 email = "contact@siteshakeup.com"
 github = ""
 rsslink = "/index.xml"
