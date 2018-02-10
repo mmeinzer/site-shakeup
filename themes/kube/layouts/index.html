@@ -3,74 +3,80 @@
 {{ define "main"}}
 
 <div id="main">
-  <div id="hero">
-    <h1>{{.Title}}</h1>
-    <img src="https://www.siteshakeup.com/siteshakeup-shake.svg" alt="Site Shakeup Logo" class="w10">
-    <p>{{.Site.Params.description}}</p>
-  </div>
-  <div id="action-buttons">
-    <a class="button primary big" href="/contact-us/">Contact Us</a>  
-    <p>Your website should work hard for your business.</p>
-  </div>
+    <div id="first-section">
+        <div id="hero">
+            <h1>{{.Title}}</h1>
+            <img src="https://www.siteshakeup.com/siteshakeup-shake.svg" alt="Site Shakeup Logo" class="w10">
+            <p>{{.Site.Params.description}}</p>
+        </div>
+        <div id="action-buttons">
+            <a class="button primary big" href="/contact-us/">Contact Us</a>  
+            <p>Your website should work hard for your business.</p>
+        </div>
+    </div>
   <div id="mission">
+    <h2>Our Mission</h2>
     <div class="row gutters">
-      <div class="col col-12 item">
-        <h2>Our Mission</h2>
+        <div class="col col-3 item">
+      </div>
+      <div class="col col-6 item">
         <p>
-          SiteShakeup was started to make web redesign more approachable for local businesses.
-          <br/>
-          We believe websites are the ultimate form of advertising and, with the world becoming increasingly connected, it only makes sense for your site to be plugged into the larger community. Local businesses are an integral part of a beautiful ecosystem and we want to ensure you’re serving all the customers you can.
+          SiteShakeup was started to make web redesign more approachable for local businesses. We believe websites are the ultimate form of advertising and, with the world becoming increasingly connected, it only makes sense for your site to be plugged into the larger community. Local businesses are an integral part of a beautiful ecosystem and we want to ensure you’re serving all the customers you can.
         </p>
+      </div>
+        <div class="col col-3 item">
       </div>
     </div>
   </div>
   <div id="how">
     <h2>How We Do It</h2>
     <div class="row gutters">
-      <div class="col col-2 item">
+      <div class="col col-3 item">
       </div>
-      <div class="col col-2 item">
+      <div class="col col-1 item">
         <figure>
           <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
         </figure>
       </div>
-      <div class="col col-6 item">
+      <div class="col col-5 item">
         <p>We start with a quick talkdown of your business’s website. We want to know how you feel about it and what you are looking to gain from a revamping service. We’ll jot down some notes and begin drafting a proposal.</p>
       </div>
-      <div class="col col-2 item">
+      <div class="col col-3 item">
       </div>
     </div>
     <div class="row gutters">
-      <div class="col col-2 item">
+      <div class="col col-3 item">
       </div>
-      <div class="col col-6 item">
+      <div class="col col-5 item">
         <p>The proposal will detail everything we think your site could benefit from, based on the talkdown we did a day earlier. We’ll get this proposal back to you within one business day of our first meeting.</p>
       </div>
-      <div class="col col-2 item">
+      <div class="col col-1 item">
         <figure>
           <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
         </figure>
       </div>
-      <div class="col col-2 item">
+      <div class="col col-3 item">
       </div>
     </div>
     <div class="row gutters">
-      <div class="col col-2 item">
+      <div class="col col-3 item">
       </div>
-      <div class="col col-2 item">
+      <div class="col col-1 item">
         <figure>
           <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
         </figure>
       </div>
-      <div class="col col-6 item">
+      <div class="col col-5 item">
         <p>After you’ve had a chance to review the proposal, we’ll get together to discuss your site’s shakeup and how we will bring it to life.</p>
       </div>
-      <div class="col col-2 item">
+      <div class="col col-3 item">
       </div>
     </div>
   </div>
-  <div id="kube-features">
+  <div id="offerings">
+      <h2>Offerings</h2>
     <div class="row gutters">
+        
       <div class="col col-4 item">
         <figure>
           <i class="fas fa-pen-square fa-3x"></i>
@@ -109,6 +115,20 @@
     </div>
   </div>
 </div>
+    <div id="get-in-touch">
+    <h2>Get In Touch</h2>
+    <div class="row gutters">
+        <div class="col col-3 item">
+      </div>
+      <div class="col col-6 item">
+        <div id="action-buttons">
+            <a class="button primary big" href="/contact-us/">Contact Us</a>
+        </div>
+      </div>
+        <div class="col col-3 item">
+      </div>
+    </div>
+  </div>
 </div>
 {{ end }}
 {{ define "footer"}} {{ partial "footer" .}} {{end}}
