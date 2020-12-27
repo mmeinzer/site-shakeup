@@ -1,0 +1,12 @@
+.nav {
+  background-color: #8abeec;
+  height: 80px;
+}
+.nav > * {
+  color: #364056;
+  text-decoration: none;
+  font-family: Raleway;
+}
+
+.nav {
+}
