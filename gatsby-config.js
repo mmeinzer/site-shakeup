@@ -5,9 +5,9 @@ module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: 'G-HVTYW7BX0T',
+        trackingIds: ['G-HVTYW7BX0T'],
       },
     },
     'gatsby-plugin-sharp',
