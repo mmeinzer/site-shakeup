@@ -1,21 +1,43 @@
 module.exports = {
   siteMetadata: {
-    title: "Site Shakeup"
+    title: 'Site Shakeup',
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-postcss',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
-        start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png" // This path is relative to the root of the site.
-      }
+        trackingId: '257512779',
+      },
     },
-    "gatsby-plugin-offline"
-  ]
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png',
+      },
+    },
+    'gatsby-transformer-remark',
+    'gatsby-plugin-mdx',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: './src/pages/',
+      },
+      __key: 'pages',
+    },
+  ],
 };
